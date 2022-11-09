@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+*::selection {
+  background-color: rgba(14, 125, 88, 0.874);
+  color: aliceblue;
+}
+
+:root {
+  --bg-header: rgb(11, 104, 73);
+  --color-icons: white;
+  --size-icons: 35px;
+  --padding-block: 15px 20px;
+  --bg-black: rgb(44, 43, 45);
+}
+
+/*header mobile*/
+
+.header {
+  background: var(--bg-header);
+  box-shadow: 9px 15px 18px -4px rgba(0, 0, 0, 0.51);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding-block);
+  align-items: center;
+  z-index: 2;
+}
+
+.header__nav {
+  display: none;
+}
+
+.header__container-icon-person {
+  display: none;
+}
+
+.header__logo {
+  font-size: var(--size-icons);
+  width: 45px;
+}
+
+.header__icon,
+.bi,
+.bi-list {
+  color: var(--color-icons);
+  font-size: var(--size-icons);
+}
+
+/*MAIN MOBILE*/
+
+.main {
+  background-image: url(../images/background-img.jpg);
+  margin-top: 82px;
+  padding: 15px 10px;
+}
+
+.main-title {
+  color: white;
+  font-size: 1.8rem;
+}
+
+.bi-star-fill,
+.bi-star-half {
+  font-size: 25px;
+  color: yellow;
+}
+
+.container__main-serve {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.green-icons-container {
+  background: white;
+  display: flex;
+  width: 60px;
+  border-radius: 50%;
+  height: 60px;
+  padding: 15px;
+}
+
+.container__items {
+  display: flex;
+  justify-content: space-around;
+}
